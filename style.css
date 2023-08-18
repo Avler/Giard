@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .intro-title {
+    @apply font-montserrat font-medium text-60 leading-70 text-customBlack;
+  }
+  .description-text {
+    @apply text-customBlack font-inter text-base not-italic font-normal leading-relaxed tracking-litleTight;
+  }
+  .btn-conntact {
+    @apply flex py-3 px-6 pt-3.5 items-center gap-2.5 bg-green text-grey rounded-200 cursor-pointer;
+  }
+  .btn-showWork {
+    @apply flex py-3 px-6 pt-3.5 items-center gap-2.5  text-green rounded-200 border border-green cursor-pointer;
+  }
+  .btn-meetUs {
+    @apply flex py-3 px-6 pt-3.5 items-center gap-2.5  text-white rounded-200 border border-white cursor-pointer;
+  }
+  .intro-photo {
+    @apply flex min-w-[688px] min-h-[737px]  flex-col justify-end items-center flex-shrink-0 bg-[url('./src/assets/images/introPhoto.png')] bg-lightgray bg-cover bg-no-repeat rotate-180;
+  }
+  .section-title {
+    @apply text-40 leading-[115%] font-medium font-inter tracking-tighter text-customBlack;
+  }
+  .sub-title-section {
+    @apply text-green font-inter text-12 leading-18;
+  }
+  .section-ofert-showCase {
+    @apply flex flex-col bg-white w-378 h-370 px-10 py-12 items-start rounded-20 gap-8;
+  }
+  .section-ofert-showCase-title {
+    @apply font-montserrat  text-customBlack text-28 font-medium leading-[115%] tracking-tighter;
+  }
+  .section-ofert-showCase-description {
+    @apply font-inter text-customBlack text-sm leading-[150%] tracking-litleTight;
+  }
+  .section-ofert-learn-more {
+    @apply flex gap-[10px] text-green font-inter border-b-2;
+  }
+  .section-ofert-learn-more-arrow {
+    @apply w-4 -rotate-90;
+  }
+  .aboutFirm-photo {
+    @apply flex min-w-[688px] min-h-[720px]  flex-col justify-end items-center flex-shrink-0 bg-[url('./src/assets/images/aboutFirmPhoto.png')] bg-lightgray bg-cover bg-no-repeat;
+  }
+  .grid-item {
+    @apply columns-3 gap-28 w-[1440px]  space-y-10 pb-28;
+  }
+  .grid-item-shadow {
+    @apply bg-shadow-gradient h-[1200px] w-full absolute bottom-0;
+  }
+  .grid-btn {
+    @apply absolute bottom-11 border border-customBlack  rounded-200 flex py-3 px-6 pt-3.5 items-center gap-2.5;
+  }
+  .contact {
+    @apply w-[1040px] flex justify-center bg-green gap-16 py-30;
+  }
+  .contact-text {
+    @apply font-montserrat text-40 text-grey leading-[120%];
+  }
+  .conntact-btn {
+    @apply border-none  bg-grey rounded-200 flex py-3 px-6  items-center gap-2.5 text-green;
+  }
+  .footer-social-link {
+    @apply font-inter text-[14px] leading-[150%] text-grey;
+  }
+}
