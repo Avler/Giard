@@ -9,13 +9,13 @@
   <body>
     <div id="app">
       <!--Section Header-->
-      <header class="flex items-center px-20">
-        <nav class="flex w-full justify-between py-6">
+      <header class="flex items-center px-8 lg:px-20">
+        <nav class="flex w-full justify-between py-6 px-3">
           <div>
             <img src="./src/assets/images/giarddesign.png" alt="logo giard" />
           </div>
-          <div class="flex gap-12">
-            <ul class="flex gap-12">
+          <div class="flex gap-6 lg:gap-12">
+            <ul class="gap-12 hidden md:flex">
               <a href="/">
                 <li class="flex gap-1">
                   Oferta
@@ -28,18 +28,22 @@
               <a href="/"><li>Realizacje</li></a>
               <a href="/"> <li>Kontakt</li></a>
             </ul>
+
             <img
               src="./src/assets/images/Icon 01.svg"
               alt="search icon"
               class="w-6"
             />
+            <img src="./src//assets/images/icon-hamburger.svg" alt="" />
           </div>
         </nav>
       </header>
       <!--Section Intro-->
-      <section class="bg-beige items-center flex relative gap-20">
-        <div class="flex flex-col h-full w-600 gap-[72px] mx-auto">
-          <div class="flex flex-col gap-11">
+      <section
+        class="bg-beige items-center relative gap-20 md:flex-col lg:flex"
+      >
+        <div class="flex flex-col h-full lg:w-600 gap-[72px] mx-auto">
+          <div class="flex flex-col gap-11 lg:ml-4 text-center pt-12">
             <h1 class="intro-title">Nowoczesna aranżacja Twojego ogrodu</h1>
             <p class="description-text">
               Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
@@ -48,7 +52,7 @@
             </p>
           </div>
 
-          <div class="flex gap-9">
+          <div class="flex flex-col justify-center items-center gap-9 pb-12">
             <button class="btn-conntact">Skontaktuj się z nami</button>
             <button class="btn-showWork">
               Zobacz nasze realizacje
@@ -74,9 +78,9 @@
       </section>
       <!--Section Oferta-->
       <section class="bg-grey flex flex-col gap-24 items-center pb-40">
-        <div class="w-[1040px] pt-30 flex flex-col gap-4">
+        <div class="lg:w-[1040px] pt-30 flex flex-col gap-4">
           <p class="sub-title-section">Oferta</p>
-          <div class="flex flex-col gap-8 w-[709px]">
+          <div class="flex flex-col gap-8 pl-4 lg:w-[709px]">
             <h2 class="section-title">
               Działamy <span class="italic">kompleksowo</span>
             </h2>
@@ -89,7 +93,7 @@
             </p>
           </div>
         </div>
-        <div class="flex justify-start px-22 gap-16">
+        <div class="flex flex-col justify-start px-22 gap-16 lg:flex-row">
           <div class="section-ofert-showCase">
             <img src="./src/assets/images/Pen.png" alt="Pen" />
             <div class="flex flex-col gap-3">
@@ -145,17 +149,17 @@
       </section>
       <!--Section About Firm-->
       <section
-        class="bg-green flex items-center justify-between gap-16 relative w-full"
+        class="bg-green flex flex-col items-center justify-between gap-16 relative w-full lg:flex-row"
       >
         <div class="aboutFirm-photo"></div>
         <div class="w-full flex justify-center">
-          <div class="flex flex-col w-600 gap-18">
+          <div class="flex flex-col items-center w-600 gap-18">
             <div class="flex flex-col gap-4">
               <p class="sub-title-section text-grey">O firmie</p>
-              <div class="flex flex-col gap-10 w-10/12 float-left">
-                <h2 class="section-title text-white">
-                  Działamy <span class="italic">kompleksowo</span>
-                </h2>
+              <h2 class="section-title text-white pl-4">
+                Tworzymy z <span class="italic p">pasją</span>
+              </h2>
+              <div class="flex gap-10 i float-left pl-4">
                 <p class="description-text text-white">
                   Oferujemy kompletną obsługę inwestycji terenów zielonych.
                   Projektujemy nowoczesne ogrody przydomowe oraz
@@ -166,7 +170,7 @@
               </div>
             </div>
 
-            <div>
+            <div class="pb-12">
               <button class="btn-meetUs">
                 Poznaj nas bliżej
                 <img
@@ -181,7 +185,7 @@
       </section>
       <!--Section Realization-->
       <section class="bg-beige pt-30 flex flex-col gap-24" id="realization">
-        <div class="flex flex-col gap-4 pl-40">
+        <div class="flex flex-col gap-4 pl-4 lg:pl-40">
           <p class="sub-title-section">Realizacje</p>
           <h2 class="section-title">
             Nasze <span class="italic">projekty</span>
@@ -200,7 +204,9 @@
       </section>
     </div>
     <!-- Section Contact -->
-    <section class="w-full bg-grey flex justify-center py-16">
+    <section
+      class="w-full bg-grey flex flex-col justify-center py-16 lg:flex-row"
+    >
       <div class="contact">
         <div class="flex flex-col">
           <h3 class="contact-text">Zostańmy w kontakcie!</h3>
@@ -209,7 +215,7 @@
             <span class="contact-text italic font-semibold">Instagramie</span>
           </p>
         </div>
-        <div class="flex flex-col gap-6 items-start">
+        <div class="flex flex-col gap-6 items-center">
           <p class="contact-text text-[16px]">
             Śledź nasze <br />najnowsze realizacje
           </p>
@@ -221,33 +227,33 @@
     <section
       class="bg-customBlack flex flex-col gap-30 py-16 justify-center items-center w-full"
     >
-      <div class="w-[1040px] flex flex-col gap-16 py-16">
+      <div class="lg:w-[1040px] flex flex-col gap-16 py-16">
         <div class="flex justify-evenly w-full">
-          <div class="flex justify-between gap-6 w-full">
-            <img src="./src/assets/images/footerLogo.svg" alt="logo" />
-            <div class="flex gap-6 items-center">
+          <div class="flex flex-col justify-between gap-6 w-40">
+            <img src="./src/assets/images/footerLogo.svg" alt="logo" class="" />
+            <div class="flex flex-col gap-6 items-center">
               <p class="text-grey">Daj znać, co możemy dla Ciebie zrobić!</p>
               <button class="btn-conntact">Skontaktuj się z nami</button>
             </div>
           </div>
         </div>
         <div class="bg-grey h-[1px]"></div>
-        <div class="flex justify-between">
-          <div class="flex gap-12">
+        <div class="flex flex-col justify-between gap-2">
+          <div class="flex flex-col lg:gap-12 text-center">
             <a href="/" class="footer-social-link">Kontakt</a>
             <a href="/" class="footer-social-link">Instagram</a>
             <a href="/" class="footer-social-link">Facvebook</a>
             <a href="/" class="footer-social-link">LinkedIn</a>
           </div>
-          <div class="flex gap-12">
+          <div class="flex flex-col lg:gap-12 text-center">
             <p class="footer-social-link">000-000-000</p>
             <p class="footer-social-link">giarddesign@kontakt.pl</p>
           </div>
         </div>
       </div>
-      <div class="w-[1040px] flex justify-between">
+      <div class="lg:w-[1040px] flex-col justify-between">
         <p class="footer-social-link">Prawa zastrzeżone © 2022</p>
-        <div class="flex items-center gap-4">
+        <div class="flex flex-col items-center gap-4">
           <p class="footer-social-link">made by</p>
           <img
             src="./src/assets/images/adRespectLogo.svg"

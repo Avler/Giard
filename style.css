@@ -4,31 +4,31 @@
 
 @layer components {
   .intro-title {
-    @apply font-montserrat font-medium text-60 leading-70 text-customBlack;
+    @apply font-montserrat font-semibold px-5  lg:text-60 text-2xl lg:leading-70  text-customBlack md:ml-4;
   }
   .description-text {
-    @apply text-customBlack font-inter text-base not-italic font-normal leading-relaxed tracking-litleTight;
+    @apply text-customBlack font-inter text-base not-italic font-normal leading-relaxed tracking-litleTight px-5 md:ml-4;
   }
   .btn-conntact {
-    @apply flex py-3 px-6 pt-3.5 items-center gap-2.5 bg-green text-grey rounded-200 cursor-pointer;
+    @apply flex justify-center w-[240px] py-3 px-6 pt-3.5 items-center gap-2.5 bg-green text-grey rounded-200 cursor-pointer;
   }
   .btn-showWork {
-    @apply flex py-3 px-6 pt-3.5 items-center gap-2.5  text-green rounded-200 border border-green cursor-pointer;
+    @apply flex justify-center w-[240px] py-3 px-6 pt-3.5 items-center gap-2.5  text-green rounded-200 border border-green cursor-pointer;
   }
   .btn-meetUs {
     @apply flex py-3 px-6 pt-3.5 items-center gap-2.5  text-white rounded-200 border border-white cursor-pointer;
   }
   .intro-photo {
-    @apply flex min-w-[688px] min-h-[737px]  flex-col justify-end items-center flex-shrink-0 bg-[url('./src/assets/images/introPhoto.png')] bg-lightgray bg-cover bg-no-repeat rotate-180;
+    @apply flex lg:min-w-[688px] lg:min-h-[737px] min-w-[350px] min-h-[350px]  flex-col justify-end items-center flex-shrink-0 bg-[url('./src/assets/images/introPhoto.png')] bg-lightgray bg-cover bg-no-repeat rotate-180;
   }
   .section-title {
-    @apply text-40 leading-[115%] font-medium font-inter tracking-tighter text-customBlack;
+    @apply lg:text-40 leading-[115%] font-medium font-inter lg:tracking-tighter text-customBlack;
   }
   .sub-title-section {
-    @apply text-green font-inter text-12 leading-18;
+    @apply text-green font-inter text-xl leading-18 pl-4;
   }
   .section-ofert-showCase {
-    @apply flex flex-col bg-white w-378 h-370 px-10 py-12 items-start rounded-20 gap-8;
+    @apply flex flex-col bg-white w-[340px] lg:w-378 h-370 px-10 py-12 items-start rounded-20 gap-8;
   }
   .section-ofert-showCase-title {
     @apply font-montserrat  text-customBlack text-28 font-medium leading-[115%] tracking-tighter;
@@ -43,10 +43,10 @@
     @apply w-4 -rotate-90;
   }
   .aboutFirm-photo {
-    @apply flex min-w-[688px] min-h-[720px]  flex-col justify-end items-center flex-shrink-0 bg-[url('./src/assets/images/aboutFirmPhoto.png')] bg-lightgray bg-cover bg-no-repeat;
+    @apply flex lg:min-w-[688px] lg:min-h-[720px] w-screen h-[300px] flex-col justify-end items-center flex-shrink-0 bg-[url('./src/assets/images/aboutFirmPhoto.png')] bg-lightgray bg-cover bg-no-repeat;
   }
   .grid-item {
-    @apply columns-3 gap-28 w-[1440px]  space-y-10 pb-28;
+    @apply lg:columns-3 columns-1 gap-28 lg:w-[1440px]  space-y-10 pb-28;
   }
   .grid-item-shadow {
     @apply bg-shadow-gradient h-[1200px] w-full absolute bottom-0;
@@ -55,10 +55,10 @@
     @apply absolute bottom-11 border border-customBlack  rounded-200 flex py-3 px-6 pt-3.5 items-center gap-2.5;
   }
   .contact {
-    @apply w-[1040px] flex justify-center bg-green gap-16 py-30;
+    @apply lg:w-[1040px] lg:flex-row flex flex-col justify-center items-center text-center bg-green gap-8 lg:gap-16 py-16 lg:py-30;
   }
   .contact-text {
-    @apply font-montserrat text-40 text-grey leading-[120%];
+    @apply font-montserrat lg:text-40 text-grey leading-[120%];
   }
   .conntact-btn {
     @apply border-none  bg-grey rounded-200 flex py-3 px-6  items-center gap-2.5 text-green;
