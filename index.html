@@ -14,26 +14,38 @@
           <div>
             <img src="./src/assets/images/giarddesign.png" alt="logo giard" />
           </div>
-          <div class="flex gap-6 lg:gap-12">
+          <div class="flex gap-6 lg:gap-12 relative">
             <ul class="gap-12 hidden md:flex">
-              <a href="/">
-                <li class="flex gap-1">
-                  Oferta
-                  <img
-                    src="./src/assets/images/Icon.svg"
-                    alt="open nav arrow"
-                  /></li
-              ></a>
-              <a href="/"><li>O Firmie</li></a>
-              <a href="/"><li>Realizacje</li></a>
-              <a href="/"> <li>Kontakt</li></a>
-            </ul>
+              <li class="flex gap-1" id="oferta">
+                Oferta
+                <img src="./src/assets/images/Icon.svg" alt="open nav arrow" />
+              </li>
 
+              <ul id="podlista" class="show-list">
+                <li class="show-list-element">Projekty</li>
+                <li class="show-list-element">Wizualizacje</li>
+                <li class="show-list-element">Realizacje</li>
+              </ul>
+              <li>O Firmie</li>
+              <li>Realizacje</li>
+              <li>Kontakt</li>
+            </ul>
+            <div
+              class="opacity-0 transform translate-x-full transition-all duration-500 ease-in-out hidden"
+              id="input-cont"
+            >
+              <input
+                type="text"
+                class="bg-grey w-64 h-6 rounded-lg placeholder:search items focus:outline-none px-6"
+              />
+            </div>
             <img
               src="./src/assets/images/Icon 01.svg"
               alt="search icon"
-              class="w-6"
+              class="w-6 cursor-pointer"
+              id="search"
             />
+
             <img
               src="./src//assets/images/icon-hamburger.svg"
               alt="ham-menu"

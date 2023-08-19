@@ -3,6 +3,12 @@
 @tailwind utilities;
 
 @layer components {
+  .show-list {
+    @apply bg-beige absolute top-[72px] z-10 flex flex-col  items-center h-0 overflow-hidden transition-all ease-out duration-300;
+  }
+  .show-list-element {
+    @apply bg-white w-40 h-16 flex justify-start items-center px-4 cursor-pointer hover:bg-grey hover:text-green hover:shadow-md transition duration-300;
+  }
   .intro-title {
     @apply font-montserrat font-semibold px-5  lg:text-60 text-2xl lg:leading-70  text-customBlack md:ml-4;
   }
