@@ -283,29 +283,36 @@
       id="imageModal"
       class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden"
     >
-      <div class="modal-content bg-white rounded-lg relative w-[800px]">
-        <img
-          id="prevArrow"
-          class="absolute top-1/2 left-8 cursor-pointer"
-          src="./src/assets/images/Arrow Left.svg"
-          alt="Previous Image"
-        />
-        <img
-          id="nextArrow"
-          class="absolute top-1/2 right-8 cursor-pointer"
-          src="./src//assets/images/Arrow  Right.svg"
-          alt="Next Image"
-        />
-
+      <div
+        class="modal-content bg-white rounded-lg relative lg:w-[800px] w-[375px] md:w-[765px]"
+      >
         <span class="close cursor-pointer absolute top-2 right-2 text-4xl"
           >&times;</span
         >
 
         <div
-          class="bg-grey p-20 rounded-lg h-[900px] flex justify-center items-center flex-col"
+          class="bg-grey rounded-lg lg:h-[700px] h-[400px] md:h-[600px] flex justify-center items-center flex-col"
         >
-          <img id="img01" class="max-w-md mx-auto" loading="lazy" />
-          <div id="caption" class="text-center mt-4"></div>
+          <img
+            id="img01"
+            class="max-w-md mx-auto w-[300px] h-[200px] md:w-[600px] md:h-[400px]"
+            loading="lazy"
+          />
+          <div id="caption" class="text-center mt-4 text-12 px-3"></div>
+          <div class="flex gap-3 mt-3">
+            <img
+              id="prevArrow"
+              class="cursor-pointer"
+              src="./src/assets/images/Arrow Left.svg"
+              alt="Previous Image"
+            />
+            <img
+              id="nextArrow"
+              class="cursor-pointer"
+              src="./src//assets/images/Arrow  Right.svg"
+              alt="Next Image"
+            />
+          </div>
         </div>
       </div>
     </div>
