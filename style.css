@@ -16,13 +16,13 @@
     @apply text-customBlack font-inter text-base not-italic font-normal leading-relaxed tracking-litleTight px-5 md:ml-4;
   }
   .btn-conntact {
-    @apply flex justify-center w-[250px] py-3 px-6 pt-3.5 items-center gap-2.5 bg-green text-grey rounded-200 cursor-pointer;
+    @apply flex justify-center w-[250px] py-3 px-6 pt-3.5 items-center gap-2.5 bg-green text-grey rounded-200 cursor-pointer hover:bg-green500 hover:text-gray100;
   }
   .btn-showWork {
-    @apply flex justify-center w-[250px] py-3 px-6 pt-3.5 items-center gap-2.5  text-green rounded-200 border border-green cursor-pointer;
+    @apply flex justify-center w-[250px] py-3 px-6 pt-3.5 items-center gap-2.5  text-green rounded-200 border border-green cursor-pointer hover:bg-beigeLighter;
   }
   .btn-meetUs {
-    @apply flex py-3 px-6 pt-3.5 items-center gap-2.5  text-white rounded-200 border border-white cursor-pointer;
+    @apply flex py-3 px-6 pt-3.5 items-center gap-2.5  text-white rounded-200 border border-white cursor-pointer hover:bg-green500;
   }
   .intro-photo {
     @apply flex lg:min-w-[688px] lg:min-h-[737px] md:min-w-[588px] md:min-h-[537px] min-w-[350px] min-h-[350px]  flex-col justify-end items-center flex-shrink-0 bg-[url('./src/assets/images/introPhoto.png')] bg-lightgray bg-cover bg-no-repeat rotate-180;
@@ -55,10 +55,10 @@
     @apply lg:columns-3 columns-3 lg:gap-28 lg:w-[1440px]   pt-20 pb-28;
   }
   .grid-item-shadow {
-    @apply bg-shadow-gradient lg:h-[1200px] h-[400px] w-full absolute bottom-0;
+    @apply bg-shadow-gradient lg:h-[1200px] h-[400px] w-full absolute bottom-0 z-10;
   }
   .grid-btn {
-    @apply absolute bottom-11 border border-customBlack  rounded-200 flex py-3 px-6 pt-3.5 items-center gap-2.5;
+    @apply absolute bottom-11 border border-customBlack  rounded-200 flex py-3 px-6 pt-3.5 items-center gap-2.5 z-20;
   }
   .contact {
     @apply lg:w-[1040px] md:flex-row flex flex-col justify-center items-center text-center bg-green gap-8 lg:gap-16 py-16 lg:py-30;

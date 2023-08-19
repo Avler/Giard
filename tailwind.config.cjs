@@ -10,10 +10,13 @@ export default {
     colors: {
       white: "#FFF",
       beige: "#DCC1AB",
+      beigeLighter: "#e6cbb5",
       customBlack: "#111",
       green: "#1B5B31",
       grey: "#F5F0EC",
       lightgray: "rgba(255, 255, 255, 0.10)",
+      green500: "#2E7D32",
+      gray100: "#F5F5F5",
     },
     extend: {
       fontFamily: {

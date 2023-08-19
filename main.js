@@ -24,7 +24,10 @@ function fetchGardenImages(page = 1) {
           "h-auto",
           "object-cover",
           "cursor-pointer",
-          "mb-10"
+          "mb-10",
+          "hover:scale-105",
+          "transform",
+          "transition-transform"
         );
         img.setAttribute("loading", "lazy");
 
@@ -73,6 +76,12 @@ function fetchGardenImages(page = 1) {
 
         div.appendChild(img);
         divElement.appendChild(div);
+
+        // Force a reflow to make the animation work
+        void div.offsetWidth;
+        // Now modify to the final state to trigger the animation
+        div.classList.remove("opacity-0", "translate-y-4");
+        div.classList.add("opacity-100", "translate-y-0");
       });
     })
 
