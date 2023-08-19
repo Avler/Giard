@@ -49,7 +49,7 @@
     @apply w-4 -rotate-90;
   }
   .aboutFirm-photo {
-    @apply flex lg:w-[688px] lg:min-h-[720px] w-screen h-[400px] flex-col justify-end items-center flex-shrink-0 bg-[url('./src/assets/images/aboutFirmPhoto.png')] bg-lightgray bg-cover bg-no-repeat;
+    @apply flex lg:w-[50%] lg:min-h-[720px] w-screen h-[400px] flex-col justify-end items-center flex-shrink-0 bg-[url('./src/assets/images/aboutFirmPhoto.png')] bg-lightgray bg-cover bg-no-repeat;
   }
   .grid-item {
     @apply lg:columns-3 columns-3 lg:gap-28 lg:w-[1440px]   pt-20 pb-28;
