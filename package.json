@@ -20,6 +20,7 @@
     "cli": "^1.0.1",
     "font-awesome": "^4.7.0",
     "masonry-layout": "^4.2.2",
+    "tailwindcss-animated": "^1.0.1",
     "watch": "^1.0.2"
   }
 }

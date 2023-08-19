@@ -16,10 +16,10 @@
     @apply text-customBlack font-inter text-base not-italic font-normal leading-relaxed tracking-litleTight px-5 md:ml-4;
   }
   .btn-conntact {
-    @apply flex justify-center w-[240px] py-3 px-6 pt-3.5 items-center gap-2.5 bg-green text-grey rounded-200 cursor-pointer;
+    @apply flex justify-center w-[250px] py-3 px-6 pt-3.5 items-center gap-2.5 bg-green text-grey rounded-200 cursor-pointer;
   }
   .btn-showWork {
-    @apply flex justify-center w-[240px] py-3 px-6 pt-3.5 items-center gap-2.5  text-green rounded-200 border border-green cursor-pointer;
+    @apply flex justify-center w-[250px] py-3 px-6 pt-3.5 items-center gap-2.5  text-green rounded-200 border border-green cursor-pointer;
   }
   .btn-meetUs {
     @apply flex py-3 px-6 pt-3.5 items-center gap-2.5  text-white rounded-200 border border-white cursor-pointer;
@@ -34,7 +34,7 @@
     @apply text-green font-inter text-xl leading-18 pl-4;
   }
   .section-ofert-showCase {
-    @apply flex flex-col bg-white w-[340px] lg:w-378 h-370 px-10 py-12 items-start rounded-20 gap-8;
+    @apply flex flex-col bg-white w-[340px] lg:w-378 h-370 px-10 py-12 items-start rounded-20 gap-8 hover:scale-110 transform transition-transform;
   }
   .section-ofert-showCase-title {
     @apply font-montserrat  text-customBlack text-28 font-medium leading-[115%] tracking-tighter;
