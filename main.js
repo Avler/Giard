@@ -19,7 +19,13 @@ function fetchGardenImages(page = 1) {
         const img = document.createElement("img");
         img.src = photo.urls.small;
         img.alt = photo.description || "Zdjęcie z ogrodu";
-        img.classList.add("w-full", "h-auto", "object-cover", "cursor-pointer");
+        img.classList.add(
+          "w-full",
+          "h-auto",
+          "object-cover",
+          "cursor-pointer",
+          "mb-10"
+        );
         img.setAttribute("loading", "lazy");
 
         // Inside the fetchGardenImages function, for the img.onclick

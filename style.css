@@ -19,7 +19,7 @@
     @apply flex py-3 px-6 pt-3.5 items-center gap-2.5  text-white rounded-200 border border-white cursor-pointer;
   }
   .intro-photo {
-    @apply flex lg:min-w-[688px] lg:min-h-[737px] min-w-[350px] min-h-[350px]  flex-col justify-end items-center flex-shrink-0 bg-[url('./src/assets/images/introPhoto.png')] bg-lightgray bg-cover bg-no-repeat rotate-180;
+    @apply flex lg:min-w-[688px] lg:min-h-[737px] md:min-w-[588px] md:min-h-[537px] min-w-[350px] min-h-[350px]  flex-col justify-end items-center flex-shrink-0 bg-[url('./src/assets/images/introPhoto.png')] bg-lightgray bg-cover bg-no-repeat rotate-180;
   }
   .section-title {
     @apply lg:text-40 leading-[115%] font-medium font-inter lg:tracking-tighter text-customBlack;
@@ -43,19 +43,19 @@
     @apply w-4 -rotate-90;
   }
   .aboutFirm-photo {
-    @apply flex lg:min-w-[688px] lg:min-h-[720px] w-screen h-[300px] flex-col justify-end items-center flex-shrink-0 bg-[url('./src/assets/images/aboutFirmPhoto.png')] bg-lightgray bg-cover bg-no-repeat;
+    @apply flex lg:w-[688px] lg:min-h-[720px] w-screen h-[400px] flex-col justify-end items-center flex-shrink-0 bg-[url('./src/assets/images/aboutFirmPhoto.png')] bg-lightgray bg-cover bg-no-repeat;
   }
   .grid-item {
-    @apply lg:columns-3 columns-1 gap-28 lg:w-[1440px]  space-y-10 pb-28;
+    @apply lg:columns-3 columns-3 lg:gap-28 lg:w-[1440px]   pt-20 pb-28;
   }
   .grid-item-shadow {
-    @apply bg-shadow-gradient h-[1200px] w-full absolute bottom-0;
+    @apply bg-shadow-gradient lg:h-[1200px] h-[400px] w-full absolute bottom-0;
   }
   .grid-btn {
     @apply absolute bottom-11 border border-customBlack  rounded-200 flex py-3 px-6 pt-3.5 items-center gap-2.5;
   }
   .contact {
-    @apply lg:w-[1040px] lg:flex-row flex flex-col justify-center items-center text-center bg-green gap-8 lg:gap-16 py-16 lg:py-30;
+    @apply lg:w-[1040px] md:flex-row flex flex-col justify-center items-center text-center bg-green gap-8 lg:gap-16 py-16 lg:py-30;
   }
   .contact-text {
     @apply font-montserrat lg:text-40 text-grey leading-[120%];
