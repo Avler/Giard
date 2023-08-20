@@ -12,13 +12,22 @@
       <header class="flex items-center justify-center px-8 lg:px-20">
         <nav class="flex w-full justify-between py-6 px-3">
           <div>
-            <img src="./src/assets/images/giarddesign.png" alt="logo giard" />
+            <img
+              src="./src/assets/images/giarddesign.png"
+              alt="logo giard"
+              loading="lazy"
+            />
           </div>
           <div class="flex gap-6 lg:gap-12 relative">
-            <ul class="gap-12 hidden md:flex">
-              <li class="flex gap-1" id="oferta">
+            <ul id="list-nav" class="nav-list hidden">
+              <li class="flex gap-1 list" id="oferta">
                 Oferta
-                <img src="./src/assets/images/Icon.svg" alt="open nav arrow" />
+                <img
+                  src="./src/assets/images/Icon.svg"
+                  alt="open nav arrow"
+                  loading="lazy"
+                  class="h-6 w-8 rotate-90 md:rotate-0"
+                />
               </li>
 
               <ul id="podlista" class="show-list">
@@ -26,9 +35,9 @@
                 <li class="show-list-element">Wizualizacje</li>
                 <li class="show-list-element">Realizacje</li>
               </ul>
-              <li>O Firmie</li>
-              <li>Realizacje</li>
-              <li>Kontakt</li>
+              <li class="list">O Firmie</li>
+              <li class="list">Realizacje</li>
+              <li class="list">Kontakt</li>
             </ul>
             <div
               class="opacity-0 transform translate-x-full transition-all duration-500 ease-in-out hidden"
@@ -44,17 +53,21 @@
               alt="search icon"
               class="w-6 cursor-pointer"
               id="search"
+              loading="lazy"
             />
 
             <img
               src="./src//assets/images/icon-hamburger.svg"
               alt="ham-menu"
-              class="md:hidden"
+              class="md:hidden cursor-pointer"
+              id="menu"
+              loading="lazy"
             />
           </div>
         </nav>
       </header>
       <!--Section Intro-->
+
       <section
         class="bg-beige items-center relative gap-20 flex flex-col lg:flex-row md:gap-0"
       >
@@ -75,7 +88,11 @@
             <button class="btn-conntact">Skontaktuj się z nami</button>
             <button class="btn-showWork">
               Zobacz nasze realizacje
-              <img src="./src//assets//images/Vector.svg" alt="vector " />
+              <img
+                src="./src//assets//images/Vector.svg"
+                alt="vector "
+                loading="lazy"
+              />
             </button>
           </div>
         </div>
@@ -87,11 +104,13 @@
             src="./src/assets/images/Arrow Left.svg"
             alt="arrow left"
             class="cursor-pointer"
+            loading="lazy"
           />
           <img
             src="./src/assets/images/Arrow  Right.svg"
             alt="arrow right"
             class="cursor-pointer"
+            loading="lazy"
           />
         </div>
       </section>
@@ -118,6 +137,7 @@
               src="./src/assets/images/Pen.png"
               alt="Pen"
               class="group-hover:animate-wiggle-more group-hover:animate-infinite"
+              loading="lazy"
             />
             <div class="flex flex-col gap-3">
               <h3 class="section-ofert-showCase-title">Projekty</h3>
@@ -132,6 +152,7 @@
                 src="./src/assets/images/Vector.svg"
                 alt="arrow right"
                 class="section-ofert-learn-more-arrow"
+                loading="lazy"
             /></a>
           </div>
           <div class="section-ofert-showCase group">
@@ -139,6 +160,7 @@
               src="./src/assets/images/eye.png"
               alt="Pen"
               class="group-hover:animate-bounce group-hover:animate-infinite"
+              loading="lazy"
             />
             <div class="flex flex-col gap-3">
               <h3 class="section-ofert-showCase-title">Wizualizacje</h3>
@@ -153,6 +175,7 @@
                 src="./src/assets/images/Vector.svg"
                 alt="arrow right"
                 class="section-ofert-learn-more-arrow"
+                loading="lazy"
             /></a>
           </div>
           <div class="section-ofert-showCase group">
@@ -160,6 +183,7 @@
               src="./src/assets/images/star.png"
               alt="Pen"
               class="group-hover:animate-wiggle-more group-hover:animate-infinite"
+              loading="lazy"
             />
             <div class="flex flex-col gap-3">
               <h3 class="section-ofert-showCase-title">Realizacje</h3>
@@ -174,6 +198,7 @@
                 src="./src/assets/images/Vector.svg"
                 alt="arrow right"
                 class="section-ofert-learn-more-arrow"
+                loading="lazy"
             /></a>
           </div>
         </div>
@@ -208,6 +233,7 @@
                   src="./src/assets/images/VectorWhite.svg"
                   alt="arrow"
                   class="-rotate-90"
+                  loading="lazy"
                 />
               </button>
             </div>
@@ -238,7 +264,11 @@
           </div>
           <button class="grid-btn" id="grid-expand">
             Load more
-            <img src="./src/assets/images/VectorBlack.svg" alt="vector" />
+            <img
+              src="./src/assets/images/VectorBlack.svg"
+              alt="vector"
+              loading="lazy"
+            />
           </button>
         </div>
       </section>
@@ -248,7 +278,7 @@
       class="w-full bg-grey flex flex-col justify-center py-16 lg:flex-row"
     >
       <div class="contact">
-        <div class="flex flex-col">
+        <div class="flex flex-col animate-bounce animate-infinite">
           <h3 class="contact-text">Zostańmy w kontakcie!</h3>
           <p class="contact-text">
             Znajdziesz nas na
@@ -274,7 +304,12 @@
           <div
             class="flex flex-col gap-6 w-40 lg:flex-row lg:w-full lg:justify-between"
           >
-            <img src="./src/assets/images/footerLogo.svg" alt="logo" class="" />
+            <img
+              src="./src/assets/images/footerLogo.svg"
+              alt="logo"
+              class=""
+              loading="lazy"
+            />
             <div class="flex flex-col gap-6 items-center lg:justify-between">
               <p class="text-grey">Daj znać, co możemy dla Ciebie zrobić!</p>
               <button class="btn-conntact">Skontaktuj się z nami</button>
@@ -290,18 +325,19 @@
             <a href="/" class="footer-social-link">LinkedIn</a>
           </div>
           <div class="flex flex-col lg:gap-12 text-center lg:flex-row">
-            <p class="footer-social-link">000-000-000</p>
-            <p class="footer-social-link">giarddesign@kontakt.pl</p>
+            <p class="footer-info">000-000-000</p>
+            <p class="footer-info">giarddesign@kontakt.pl</p>
           </div>
         </div>
       </div>
       <div class="lg:w-[1040px] flex flex-col justify-between lg:flex-row">
-        <p class="footer-social-link">Prawa zastrzeżone © 2022</p>
+        <p class="footer-info">Prawa zastrzeżone © 2022</p>
         <div class="flex flex-col items-center gap-4 lg:flex-row">
-          <p class="footer-social-link">made by</p>
+          <p class="footer-info">made by</p>
           <img
             src="./src/assets/images/adRespectLogo.svg"
             alt=" adRespectLogo"
+            loading="lazy"
           />
         </div>
       </div>
@@ -333,12 +369,14 @@
               class="cursor-pointer"
               src="./src/assets/images/Arrow Left.svg"
               alt="Previous Image"
+              loading="lazy"
             />
             <img
               id="nextArrow"
               class="cursor-pointer"
               src="./src//assets/images/Arrow  Right.svg"
               alt="Next Image"
+              loading="lazy"
             />
           </div>
         </div>

@@ -19,6 +19,9 @@ export default {
       gray100: "#F5F5F5",
     },
     extend: {
+      animation: {
+        slideDown: "slideDown 0.5s forwards",
+      },
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
         inter: ["Inter", "sans-serif"],

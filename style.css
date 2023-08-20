@@ -2,9 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 @layer components {
+  .nav-list {
+    @apply animate-slideDown gap-12 md:top-12 z-10 absolute top-[48px] md:static md:flex;
+  }
+  .list {
+    @apply cursor-pointer hover:text-green500 bg-white h-16 w-40 flex justify-start items-center pl-4 transition duration-300 md:h-6 md:w-20 md:justify-center;
+  }
   .show-list {
-    @apply bg-beige absolute top-[48px] z-10 flex flex-col  items-center h-0 overflow-hidden transition-all ease-out duration-300;
+    @apply absolute top-0 right-40 md:right-96 md:top-[46px]  z-10 flex flex-col  items-center h-0 overflow-hidden transition-all ease-out duration-300;
   }
   .show-list-element {
     @apply bg-white w-40 h-16 flex justify-start items-center px-4 cursor-pointer hover:bg-grey hover:text-green hover:shadow-md transition duration-300;
@@ -25,7 +42,7 @@
     @apply flex py-3 px-6 pt-3.5 items-center gap-2.5  text-white rounded-200 border border-white cursor-pointer hover:bg-green500;
   }
   .intro-photo {
-    @apply flex lg:min-w-[688px] lg:min-h-[737px] md:min-w-[588px] md:min-h-[537px] min-w-[350px] min-h-[350px]  flex-col justify-end items-center flex-shrink-0 bg-[url('./src/assets/images/introPhoto.png')] bg-lightgray bg-cover bg-no-repeat rotate-180;
+    @apply flex lg:max-w-[688px] lg:min-h-[737px] md:w-full md:min-h-[537px] min-w-[350px] min-h-[350px]  flex-col justify-end items-center flex-shrink-0 bg-[url('./src/assets/images/introPhoto.png')] bg-lightgray bg-cover bg-no-repeat rotate-180;
   }
   .section-title {
     @apply lg:text-40 leading-[115%] font-medium font-inter lg:tracking-tighter text-customBlack;
@@ -58,7 +75,7 @@
     @apply bg-shadow-gradient lg:h-[1200px] h-[400px] w-full absolute bottom-0 z-10;
   }
   .grid-btn {
-    @apply absolute bottom-11 border border-customBlack  rounded-200 flex py-3 px-6 pt-3.5 items-center gap-2.5 z-20;
+    @apply absolute bottom-11 border border-customBlack  rounded-200 flex py-3 px-6 pt-3.5 items-center gap-2.5 z-20 hover:bg-beigeLighter;
   }
   .contact {
     @apply lg:w-[1040px] md:flex-row flex flex-col justify-center items-center text-center bg-green gap-8 lg:gap-16 py-16 lg:py-30;
@@ -67,9 +84,12 @@
     @apply font-montserrat lg:text-40 text-grey leading-[120%];
   }
   .conntact-btn {
-    @apply border-none  bg-grey rounded-200 flex py-3 px-6  items-center gap-2.5 text-green;
+    @apply border-none  bg-grey rounded-200 flex py-3 px-6  items-center gap-2.5 text-green hover:bg-gray100;
   }
   .footer-social-link {
+    @apply font-inter text-[14px] leading-[150%] text-grey hover:text-green500;
+  }
+  .footer-info {
     @apply font-inter text-[14px] leading-[150%] text-grey;
   }
 }

@@ -38,7 +38,7 @@ function fetchGardenImages(page = 1) {
           const captionText = document.getElementById("caption");
 
           modal.classList.remove("hidden"); // just toggle the hidden class
-          modalImg.src = photo.urls.full;
+          modalImg.src = photo.urls.small;
           captionText.innerHTML = img.alt;
           currentImageIndex = (currentPage - 1) * 10 + index; // set current image index
           showModal(photo);
@@ -109,6 +109,20 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
+  const menu = document.getElementById("menu");
+  const list = document.getElementById("list-nav");
+
+  menu.addEventListener("click", function () {
+    if (list.classList.contains("hidden")) {
+      list.classList.remove("hidden");
+      // Zwróć uwagę, że może to być niepotrzebne, jeśli klasa "hidden" manipuluje wysokością
+    } else {
+      list.classList.add("hidden");
+    }
+  });
+});
+
+document.addEventListener("DOMContentLoaded", function () {
   const search = document.getElementById("search");
   const input = document.getElementById("input-cont");
 
@@ -128,6 +142,39 @@ document.addEventListener("DOMContentLoaded", function () {
       }, 500); // 500ms matches the duration of our transition
     }
   });
+});
+
+let currentSlide = 0;
+
+function goToSlide(n) {
+  const sliderContent = document.querySelector(".slider-content");
+  const slideWidth = document.querySelector(".slide-item").clientWidth;
+
+  currentSlide =
+    (n + sliderContent.children.length) % sliderContent.children.length;
+  sliderContent.style.transform = `translateX(-${currentSlide * slideWidth}px)`;
+
+  // Reset back to the start when reaching the end to make the loop seamless
+  if (currentSlide === sliderContent.children.length - 1) {
+    setTimeout(() => {
+      sliderContent.style.transition = "none";
+      sliderContent.style.transform = `translateX(0)`;
+      currentSlide = 0;
+      setTimeout(() => {
+        sliderContent.style.transition = "transform 0.3s ease-in-out";
+      });
+    }, 300); // This timeout should match your transition duration
+  }
+}
+
+document.getElementById("sliderPrev").addEventListener("click", () => {
+  // Going backward in a loop is a bit more complicated than going forward
+  // So for simplicity, we redirect the left arrow to the rightmost slide (duplicate slide) for the looping effect
+  goToSlide(sliderContent.children.length - 1);
+});
+
+document.getElementById("sliderNext").addEventListener("click", () => {
+  goToSlide(currentSlide + 1);
 });
 
 fetchGardenImages();
