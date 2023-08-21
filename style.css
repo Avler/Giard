@@ -14,6 +14,30 @@
 }
 
 @layer components {
+  /*Common Classes */
+
+  .description-text {
+    @apply text-customBlack font-inter text-base not-italic font-normal leading-relaxed tracking-litleTight md:pr-6;
+  }
+  .section-title {
+    @apply lg:text-40 leading-[115%] font-medium font-inter lg:tracking-tighter text-customBlack pl-4;
+  }
+  .sub-title-section {
+    @apply text-green font-inter text-xl leading-18 pl-4;
+  }
+  /*Buttons  */
+
+  .btn-conntact {
+    @apply flex justify-center w-[250px] py-3 px-6 pt-3.5 items-center gap-2.5 bg-green text-grey rounded-200 cursor-pointer hover:bg-green500 hover:text-gray100;
+  }
+  .btn-showWork {
+    @apply flex justify-center w-[250px] py-3 px-6 pt-3.5 items-center gap-2.5  text-green rounded-200 border border-green cursor-pointer hover:bg-beigeLighter;
+  }
+  .btn-meetUs {
+    @apply flex py-3 px-6 pt-3.5 items-center gap-2.5  text-white rounded-200 border border-white cursor-pointer hover:bg-green500;
+  }
+  /* Navbar */
+
   .nav-list {
     @apply animate-slideDown gap-12 md:top-12 z-10 absolute top-[48px] md:static md:flex;
   }
@@ -26,30 +50,18 @@
   .show-list-element {
     @apply bg-white w-40 h-16 flex justify-start items-center px-4 cursor-pointer hover:bg-grey hover:text-green hover:shadow-md transition duration-300;
   }
+  /* Section  Intro*/
+
   .intro-title {
-    @apply font-montserrat font-semibold   lg:text-60 text-2xl lg:leading-70  text-customBlack;
+    @apply font-montserrat font-semibold   lg:text-60 text-2xl lg:leading-70  text-customBlack text-center lg:text-left;
   }
-  .description-text {
-    @apply text-customBlack font-inter text-base not-italic font-normal leading-relaxed tracking-litleTight md:pr-6;
-  }
-  .btn-conntact {
-    @apply flex justify-center w-[250px] py-3 px-6 pt-3.5 items-center gap-2.5 bg-green text-grey rounded-200 cursor-pointer hover:bg-green500 hover:text-gray100;
-  }
-  .btn-showWork {
-    @apply flex justify-center w-[250px] py-3 px-6 pt-3.5 items-center gap-2.5  text-green rounded-200 border border-green cursor-pointer hover:bg-beigeLighter;
-  }
-  .btn-meetUs {
-    @apply flex py-3 px-6 pt-3.5 items-center gap-2.5  text-white rounded-200 border border-white cursor-pointer hover:bg-green500;
-  }
+
   .intro-photo {
     @apply flex lg:max-w-[688px] lg:min-h-[737px] md:w-full md:min-h-[537px] w-full min-h-[350px]  flex-col justify-end items-center flex-shrink-0 bg-[url('./src/assets/images/introPhoto.png')] bg-lightgray bg-cover bg-no-repeat rotate-180;
   }
-  .section-title {
-    @apply lg:text-40 leading-[115%] font-medium font-inter lg:tracking-tighter text-customBlack pl-4;
-  }
-  .sub-title-section {
-    @apply text-green font-inter text-xl leading-18 pl-4;
-  }
+
+  /* Section Ofert */
+
   .section-ofert-showCase {
     @apply flex flex-col bg-white w-[340px] lg:w-378 h-370 px-10 py-12 items-start rounded-20 gap-8 hover:scale-110 transform transition-transform;
   }
@@ -65,9 +77,14 @@
   .section-ofert-learn-more-arrow {
     @apply w-4 -rotate-90;
   }
+  /* Section Frim */
+
   .aboutFirm-photo {
     @apply flex lg:w-[50%] lg:min-h-[720px] w-screen h-[400px] flex-col justify-end items-center flex-shrink-0 bg-[url('./src/assets/images/aboutFirmPhoto.png')] bg-lightgray bg-cover bg-no-repeat;
   }
+
+  /* Section Realization */
+
   .grid-item {
     @apply lg:columns-3 columns-3 lg:gap-28 lg:w-[1440px]   pt-20 pb-28;
   }
@@ -77,6 +94,8 @@
   .grid-btn {
     @apply absolute bottom-11 border border-customBlack  rounded-200 flex py-3 px-6 pt-3.5 items-center gap-2.5 z-20 hover:bg-beigeLighter;
   }
+  /* Section Contact */
+
   .contact {
     @apply lg:w-[1040px] md:flex-row flex flex-col justify-center items-center text-center bg-green gap-8 lg:gap-16 py-16 lg:py-30;
   }
@@ -86,6 +105,8 @@
   .conntact-btn {
     @apply border-none  bg-grey rounded-200 flex py-3 px-6  items-center gap-2.5 text-green hover:bg-gray100;
   }
+  /* Section Footer  */
+
   .footer-social-link {
     @apply font-inter text-[14px] leading-[150%] text-grey hover:text-green500;
   }

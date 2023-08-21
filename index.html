@@ -67,52 +67,95 @@
         </nav>
       </header>
       <!--Section Intro-->
-      <section
-        class="bg-beige items-center relative gap-20 flex flex-col lg:flex-row md:gap-0"
-      >
-        <div class="flex flex-col h-full lg:w-600 gap-[72px] mx-auto">
-          <div
-            class="flex flex-col gap-11 md:ml-4 text-left justify-center pt-12 mx-4"
-          >
-            <h1 class="intro-title">Nowoczesna aranżacja Twojego ogrodu</h1>
-            <p class="description-text">
-              Marka GiardDesign to wieloletnie doświadczenie i wysoka estetyka
-              realizacji. <br />
-              Oferujemy kompleksowy zakres usług z indywidualnym podejściem do
-              każdego projektu.
-            </p>
-          </div>
-
-          <div class="flex flex-col justify-center items-center gap-9 pb-12">
-            <button class="btn-conntact">Skontaktuj się z nami</button>
-            <button class="btn-showWork">
-              Zobacz nasze realizacje
-              <img
-                src="./src//assets//images/Vector.svg"
-                alt="vector "
-                loading="lazy"
-              />
-            </button>
-          </div>
-        </div>
-        <div class="intro-photo"></div>
+      <div class="slider-container relative overflow-hidden">
         <div
-          class="flex bg-grey gap-8 py-6 px-8 absolute bottom-0 right-0 justify-center"
+          class="slider-wrapper flex transition-transform duration-300 ease-in-out"
+        >
+          <section
+            class="w-full flex-none bg-beige items-center relative gap-20 flex flex-col lg:flex-row md:gap-0"
+          >
+            <div class="flex flex-col h-full lg:w-600 gap-[72px] mx-auto">
+              <div
+                class="flex flex-col gap-11 md:ml-4 text-left justify-center pt-12 mx-4"
+              >
+                <h1 class="intro-title">Nowoczesna aranżacja Twojego ogrodu</h1>
+                <p class="description-text">
+                  Marka GiardDesign to wieloletnie doświadczenie i wysoka
+                  estetyka realizacji. <br />
+                  Oferujemy kompleksowy zakres usług z indywidualnym podejściem
+                  do każdego projektu.
+                </p>
+              </div>
+
+              <div
+                class="flex flex-col justify-center items-center gap-9 pb-12"
+              >
+                <button class="btn-conntact">Skontaktuj się z nami</button>
+                <button class="btn-showWork">
+                  Zobacz nasze realizacje
+                  <img
+                    src="./src//assets//images/Vector.svg"
+                    alt="vector "
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="intro-photo"></div>
+          </section>
+          <section
+            class="w-full flex-none bg-beige items-center relative gap-20 flex flex-col lg:flex-row md:gap-0"
+          >
+            <div class="flex flex-col h-full lg:w-600 gap-[72px] mx-auto">
+              <div
+                class="flex flex-col gap-11 md:ml-4 text-left justify-center pt-12 mx-4"
+              >
+                <h1 class="intro-title">Nowoczesna aranżacja Twojego ogrodu</h1>
+                <p class="description-text">
+                  Marka GiardDesign to wieloletnie doświadczenie i wysoka
+                  estetyka realizacji. <br />
+                  Oferujemy kompleksowy zakres usług z indywidualnym podejściem
+                  do każdego projektu.
+                </p>
+              </div>
+
+              <div
+                class="flex flex-col justify-center items-center gap-9 pb-12"
+              >
+                <button class="btn-conntact">Skontaktuj się z nami</button>
+                <button class="btn-showWork">
+                  Zobacz nasze realizacje
+                  <img
+                    src="./src//assets//images/Vector.svg"
+                    alt="vector "
+                    loading="lazy"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="intro-photo"></div>
+          </section>
+        </div>
+        <div
+          class="flex gap-8 py-6 px-8 absolute bottom-0 right-0 bg-grey justify-center"
         >
           <img
             src="./src/assets/images/Arrow Left.svg"
             alt="arrow left"
             class="cursor-pointer"
             loading="lazy"
+            id="prevSlide"
           />
           <img
             src="./src/assets/images/Arrow  Right.svg"
             alt="arrow right"
             class="cursor-pointer"
             loading="lazy"
+            id="nextSlide"
           />
         </div>
-      </section>
+      </div>
+
       <!--Section Oferta-->
       <section class="bg-grey flex flex-col gap-24 items-center pb-40">
         <div class="lg:w-[1040px] pt-30 flex flex-col gap-4 md:w-[600px]">
@@ -381,8 +424,8 @@
         </div>
       </div>
     </div>
-
     <script type="module" src="./src/js/main.js"></script>
     <script type="module" src="./src/js/navNavigation.js"></script>
+    <script type="module" src="./src/js/slider.js"></script>
   </body>
 </html>
