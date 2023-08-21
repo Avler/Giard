@@ -27,10 +27,10 @@
     @apply bg-white w-40 h-16 flex justify-start items-center px-4 cursor-pointer hover:bg-grey hover:text-green hover:shadow-md transition duration-300;
   }
   .intro-title {
-    @apply font-montserrat font-semibold px-5  lg:text-60 text-2xl lg:leading-70  text-customBlack md:ml-4;
+    @apply font-montserrat font-semibold   lg:text-60 text-2xl lg:leading-70  text-customBlack;
   }
   .description-text {
-    @apply text-customBlack font-inter text-base not-italic font-normal leading-relaxed tracking-litleTight px-5 md:ml-4;
+    @apply text-customBlack font-inter text-base not-italic font-normal leading-relaxed tracking-litleTight md:pr-6;
   }
   .btn-conntact {
     @apply flex justify-center w-[250px] py-3 px-6 pt-3.5 items-center gap-2.5 bg-green text-grey rounded-200 cursor-pointer hover:bg-green500 hover:text-gray100;
@@ -42,10 +42,10 @@
     @apply flex py-3 px-6 pt-3.5 items-center gap-2.5  text-white rounded-200 border border-white cursor-pointer hover:bg-green500;
   }
   .intro-photo {
-    @apply flex lg:max-w-[688px] lg:min-h-[737px] md:w-full md:min-h-[537px] min-w-[350px] min-h-[350px]  flex-col justify-end items-center flex-shrink-0 bg-[url('./src/assets/images/introPhoto.png')] bg-lightgray bg-cover bg-no-repeat rotate-180;
+    @apply flex lg:max-w-[688px] lg:min-h-[737px] md:w-full md:min-h-[537px] w-full min-h-[350px]  flex-col justify-end items-center flex-shrink-0 bg-[url('./src/assets/images/introPhoto.png')] bg-lightgray bg-cover bg-no-repeat rotate-180;
   }
   .section-title {
-    @apply lg:text-40 leading-[115%] font-medium font-inter lg:tracking-tighter text-customBlack;
+    @apply lg:text-40 leading-[115%] font-medium font-inter lg:tracking-tighter text-customBlack pl-4;
   }
   .sub-title-section {
     @apply text-green font-inter text-xl leading-18 pl-4;
