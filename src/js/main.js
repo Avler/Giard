@@ -18,6 +18,14 @@ function setupModalNavigation() {
     if (currentImageIndex < fetchedImages.length - 1) {
       currentImageIndex++;
       showModal(fetchedImages[currentImageIndex]);
+    } else {
+      // If we are at the last image and user clicks next, load more images
+      currentPage++;
+      fetchGardenImages(currentPage, () => {
+        // Once images are loaded, show the next image
+        currentImageIndex++;
+        showModal(fetchedImages[currentImageIndex]);
+      });
     }
   };
 
@@ -59,7 +67,7 @@ function createImageElement(photo, index) {
   return img;
 }
 
-function fetchGardenImages(page = 1) {
+function fetchGardenImages(page = 1, callback = null) {
   const url = `https://api.unsplash.com/search/photos?query=garden&client_id=${ACCESS_KEY}&page=${page}`;
 
   fetch(url)
@@ -81,6 +89,9 @@ function fetchGardenImages(page = 1) {
         div.classList.remove("opacity-0", "translate-y-4");
         div.classList.add("opacity-100", "translate-y-0");
       });
+
+      // If a callback function is provided, execute it
+      if (callback) callback();
     })
     .catch((error) => {
       console.error("Wystąpił błąd podczas pobierania obrazków:", error);
