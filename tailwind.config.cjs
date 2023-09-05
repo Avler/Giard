@@ -50,7 +50,7 @@ export default {
         400: "400px",
       },
       borderRadius: {
-        20: "20px",
+        20: "24px",
         200: "200px",
       },
       padding: {
